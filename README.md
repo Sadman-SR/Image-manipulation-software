@@ -1,4 +1,5 @@
-# Image-processing-software
+# Image-manipulation-software
+
 
 A C-based desktop application for image processing, built using the IUP GUI toolkit. This project allows users to load ` 24 bit uncompressed.bmp` images, apply various transformations and filters, and save the edited results.
 
