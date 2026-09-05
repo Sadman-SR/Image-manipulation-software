@@ -5,11 +5,11 @@ ifeq ($(OS),Windows_NT)
     CFLAGS = -Wall -I./iup_tmp -I./iup_tmp/include
     LDFLAGS = -L./iup_tmp -L./iup_tmp/lib -liup -lgdi32 -lcomctl32 -lcomdlg32 -lole32 -luuid
     RM = del /F /Q
-else
+   
     # Linux / WSL
     TARGET = image_editor
     CFLAGS = -Wall -I./iup_tmp -I./iup_tmp/include $(shell pkg-config --cflags gtk+-3.0)
-    LDFLAGS = -L./iup_tmp -L./iup_tmp/lib -liup $(shell pkg-config --libs gtk+-3.0) -lm
+    LDFLAGS = -L./iup_tmp -L./iup_tmp/lib -Wl,-rpath,'$$ORIGIN/iup_tmp' -Wl,-rpath,'$$ORIGIN/iup_tmp/lib' -liup $(shell pkg-config --libs gtk+-3.0) -lm
     RM = rm -f
 endif
 
