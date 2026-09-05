@@ -1,0 +1,4 @@
+*.o
+image_editor
+image_editor.exe
+*:Zone.Identifier
