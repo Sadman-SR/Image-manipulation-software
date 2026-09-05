@@ -34,7 +34,7 @@ A C-based desktop application for image processing, built using the IUP GUI tool
 ### 4. Applying blur 
 ![Applying blur](assets/blur.png)
 ### 5. Adjusting Brightness
-![Adjusting Brightness](assets/decressed.png)
+![Adjusting Brightness](assets/decressed_bright.png)
 ## How to Compile and Run
 
 To run this software, you need `gcc` and the IUP library installed on your system. 
