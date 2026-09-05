@@ -51,5 +51,6 @@ This project uses **IUP v3.31** for the GUI. The library ZIP (downloaded via WSL
   sudo apt update && sudo apt install -y build-essential libgtk-3-dev make
 
 To launch the application:
+`make`
 `./image_editor`
 
