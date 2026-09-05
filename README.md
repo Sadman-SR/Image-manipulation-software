@@ -26,14 +26,15 @@ A C-based desktop application for image processing, built using the IUP GUI tool
     
 ## Screenshots
 ### 1. Main Interface
-
-
-### 2. Adjusting Brightness
-[Drag and drop a screenshot of the brightness dialog here]
-
-### 3. Applying Blur / Grayscale
-[Drag and drop a screenshot of an edited image here]
-
+![Main Interface](assets/interface.png)
+### 2. Image Loaded
+![Image Loaded](assets/loaded_img.png)
+### 3. Applying Grayscale
+![Applying Grayscale](assets/gray.png)
+### 4. Applying blur 
+![Applying blur](assets/blur.png)
+### 5. Adjusting Brightness
+![Adjusting Brightness](assets/decressed.png)
 ## How to Compile and Run
 
 To run this software, you need `gcc` and the IUP library installed on your system. 
