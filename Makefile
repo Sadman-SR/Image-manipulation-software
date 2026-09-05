@@ -1,13 +1,13 @@
 # Detect Operating System
 ifeq ($(OS),Windows_NT)
-    # Windows (MinGW / GCC)
     TARGET = image_editor.exe
+    CC = gcc
     CFLAGS = -Wall -I./iup_tmp -I./iup_tmp/include
     LDFLAGS = -L./iup_tmp -L./iup_tmp/lib -liup -lgdi32 -lcomctl32 -lcomdlg32 -lole32 -luuid
     RM = del /F /Q
-   
-    # Linux / WSL
+else
     TARGET = image_editor
+    CC = gcc
     CFLAGS = -Wall -I./iup_tmp -I./iup_tmp/include $(shell pkg-config --cflags gtk+-3.0)
     LDFLAGS = -L./iup_tmp -L./iup_tmp/lib -Wl,-rpath,'$$ORIGIN/iup_tmp' -Wl,-rpath,'$$ORIGIN/iup_tmp/lib' -liup $(shell pkg-config --libs gtk+-3.0) -lm
     RM = rm -f
@@ -26,3 +26,5 @@ $(TARGET): $(OBJS)
 
 clean:
 	$(RM) $(OBJS) $(TARGET)
+
+.PHONY: all clean
