@@ -22,7 +22,7 @@ A C-based desktop application for image processing, built using the IUP GUI tool
   * gui.c / gui.h: IUP GUI layout, controls, and callback handlers.
   * image.c / image.h: Image memory allocation, pixel structures, and BMP file I/O.
   * process.c / process.h: Core pixel processing algorithms in pure C.
-  * iup.zip: Bundled IUP header and library files.
+  * iup_gip.gz: Bundled IUP header and library files.
     
 ## Screenshots
 ### 1. Main Interface
